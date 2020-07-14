@@ -8,3 +8,11 @@ TO CLONE =
 4. Type the following command - 
 	git clone URL
 5. And DONE. You will find the repository in your choosen directory
+
+TO PUSH Changes = 
+1. Go to your Desired Directory, open 'Command Prompt(for Windows)/ Terminal(for MAC/Linux)'.
+2. Type the following command - 
+	git add .
+	git commit -m "a message"
+	git push
+		in this order.
