@@ -1,6 +1,7 @@
 # Menu-Driven program
 
 import string
+import random
 
 # just for reference purposes.
 from Part_1 import all_prime
