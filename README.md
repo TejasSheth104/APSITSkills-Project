@@ -1,6 +1,6 @@
 # APSITSkills-Project
 
-Checking with Program - 
+Checking with Program -> 
 
 A.	Write a program to print all prime nos between 1 to 1000
 
