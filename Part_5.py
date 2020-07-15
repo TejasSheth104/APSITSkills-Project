@@ -18,7 +18,12 @@ def check_in_group():
         if value == -1:
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
-        print(True if value in test_case else False)
+        if value in test_case:
+            print('True')
+            break
+        else:
+            print('False')
+            continue
 
 
 # in case needed.
@@ -46,4 +51,9 @@ def check_random():
         if value == -1:
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
-        print(True if value in test_case else False)
+        if value in test_case:
+            print('True')
+            break
+        else:
+            print('False')
+            continue
