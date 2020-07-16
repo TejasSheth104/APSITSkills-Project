@@ -8,12 +8,16 @@ def prime_composite():
         try:
             number = int(number)
         except:
+            # if user enters anything other than an integer, the below message pops up
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
         if number == -1:
+            # exit condition
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
         elif number < 2:
+            # negatiive numbers are  not categorized as prime or composite, 
+            # and even 0 and 1 are Neither Prime NOR Composite
             print('Number', number, 'is NEITHER Prime NOR Composite Number\n')
             continue
         for i in range(2, number):
