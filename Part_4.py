@@ -12,12 +12,16 @@ def vowel_consonant():
         letter = input('Enter a letter - ')
     
         if letter == '-1':
+            # exit condition
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
         elif (len(letter) != 1) or (letter not in alphabets):
+            # checks if Length of Input is 1.
+            # and also, if the input is present in the alphabets.
             print('\t1 LETTER EXCEPTED\n\tTRY AGAIN.\n')
             continue
     
+        # converted input into lower case letter
         letter = letter.lower()
         if letter in vowels:
             print('Letter', letter.upper(), '- is a VOWEL')
