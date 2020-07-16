@@ -17,7 +17,7 @@ while True:
     print('2. To Find whether Number is ODD or EVEN.')
     print('3. To Find whether Number is PRIME or COMPOSITE.')
     print('4. To Find whether Alphabet is VOWEL or NOT.')
-    print('5. To Check specified Value  n Group of Values')
+    print('5. To Check specified Value in Group of Values')
     option = input('Enter - ')
     try:
         option = int(option)

@@ -13,7 +13,7 @@ def all_prime():
                 if num % i == 0:
                     break
             else:
-                print(num)
+                print(num, end=' ')
     print()
 
 # uncomment to run the code.
