@@ -1,22 +1,14 @@
-#(1)Prime nos between 1 to 1000
+#Prime nos. between 1 to 1000
 
-Number = 1
-
-while(Number <= 1000):
+for Number in range (1, 1000):
     count = 0
-    i = 2
-    
-    while(i <= Number//2):
+
+    for i in range(2, (Number//2 + 1)):
         if(Number % i == 0):
             count = count + 1
             break
-        i = i + 1
 
     if (count == 0 and Number != 1):
         print(" %d" %Number, end = '  ')
-    Number = Number  + 1
-
-
-
-
-
+        
+print("Enter '0' for exit.");
