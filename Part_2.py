@@ -19,3 +19,5 @@ def even_odd():
             print('Number', number, '- is EVEN\n')
         elif number % 2 == 1:
             print('Number', number, '- is ODD\n')
+
+# even_odd()
