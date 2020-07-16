@@ -1,5 +1,6 @@
 #Prime nos. between 1 to 1000
 
+print("Enter '0' for exit.");
 for Number in range (1, 1000):
     count = 0
 
