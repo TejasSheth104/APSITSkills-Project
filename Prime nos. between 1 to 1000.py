@@ -1,6 +1,5 @@
 #Prime nos. between 1 to 1000
 
-print("Enter '0' for exit.");
 for Number in range (1, 1000):
     count = 0
 
@@ -11,3 +10,5 @@ for Number in range (1, 1000):
 
     if (count == 0 and Number != 1):
         print(" %d" %Number, end = '  ')
+        
+print("Enter '0' for exit.");
