@@ -3,14 +3,15 @@
 import string
 import random
 
-# just for reference purposes.
+# linking different python files into one.
 from Part_1 import all_prime
 from Part_2 import even_odd
 from Part_3 import prime_composite
 from Part_4 import vowel_consonant
-from Part_5 import check_in_group
+from Part_5 import check_in_group, check_random
 
 while True:
+    # Main-Menu Options.
     print('\nChoose your Option - ')
     print('0. Exit')
     print('1. Print Prime Numbers between 1 to 1000.')
@@ -30,6 +31,7 @@ while True:
         continue
     
     if option == 0:
+        # exit condtion
         print('\n\tTHANK YOU FOR JOINING US!')
         exit(-1)
     elif option == 1:
@@ -41,4 +43,18 @@ while True:
     elif option == 4:
         vowel_consonant()
     elif option == 5:
-        check_in_group()
+        print('1. Given Group of Values')
+        print('2. Random Group of Values')
+        choice = input('Enter - ')
+        try:
+            choice = int(choice)
+        except:
+            print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
+            continue
+        if 1 > choice > 2:
+            print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
+            continue
+        elif choice == 1:
+            check_in_group()
+        elif choice == 2:
+            check_random()
