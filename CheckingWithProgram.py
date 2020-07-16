@@ -2,6 +2,7 @@
 
 import string
 import random
+from datetime import datetime
 
 # linking different python files into one.
 from Part_1 import all_prime
@@ -11,6 +12,12 @@ from Part_4 import vowel_consonant
 from Part_5 import check_in_group, check_random
 
 while True:
+
+    # datetime
+    str = datetime.now()
+    now = str.strftime("%d/%m/%y %H:%M:%S")
+    print(now)
+
     # Main-Menu Options.
     print('\nChoose your Option - ')
     print('0. Exit')
