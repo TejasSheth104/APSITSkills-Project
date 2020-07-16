@@ -23,4 +23,5 @@ def prime_composite():
         else:
             print('Number', number, 'is a Prime Number\n')
 
+# uncomment to run the code.
 # prime_composite()

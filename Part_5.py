@@ -25,6 +25,7 @@ def check_in_group():
             print('False')
             continue
 
+# uncomment to run the code.
 # check_in_group()
 
 # in case needed.
@@ -59,4 +60,5 @@ def check_random():
             print('False')
             continue
 
+# uncomment to run the code.
 # check_random()

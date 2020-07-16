@@ -27,4 +27,5 @@ def vowel_consonant():
             print('\tInValid INPUT.\n\tTRY AGAIN.\n')
             continue
 
+# uncomment to run the code.
 # vowel_consonant()

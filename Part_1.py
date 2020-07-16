@@ -16,4 +16,5 @@ def all_prime():
                 print(num)
     print()
 
+# uncomment to run the code.
 # all_prime()
