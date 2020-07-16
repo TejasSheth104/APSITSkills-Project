@@ -2,9 +2,6 @@
 
 # prime number = a number that is divisible by 1 and the number itself.
 
-# The else block just after for/while is executed only 
-# when the loop is NOT terminated by a break statement.
-
 def all_prime():
     print()
     for num in range(1, 1000):
