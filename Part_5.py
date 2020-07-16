@@ -7,6 +7,7 @@ import random
 
 def check_in_group():
     while True:
+        # given group of values
         test_case = [1, 5, 8, 3]
         print('\nEnter \'-1\' to QUIT.')
         value = input('Enter - ')
@@ -16,8 +17,10 @@ def check_in_group():
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
         if value == -1:
+            # exit condition
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
+        # print(True if value in test_case else False )
         if value in test_case:
             print('True')
             break
@@ -31,6 +34,7 @@ def check_in_group():
 # in case needed.
 def check_random():
     while True:
+        # randomly generating the list
         test_case = list()
         length = input('\nEnter Length of the test_case - ')
         try:
@@ -42,6 +46,7 @@ def check_random():
             test_case.append(random.choice(range(10)))
         break
 #     print(test_case)
+
     while True:
         print('\nEnter \'-1\' to QUIT.')
         value = input('Enter - ')
@@ -51,8 +56,10 @@ def check_random():
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
         if value == -1:
+            # exit condition
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
+        # print(True if value in test_case else False )
         if value in test_case:
             print('True')
             break
