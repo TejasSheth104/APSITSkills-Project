@@ -13,6 +13,10 @@ def all_prime():
         except:
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
+        if start == -1 or end == -1:
+            # exit condition
+            print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
+            break
         for num in range(start, end):
             if num > 1:
                 for i in range(2, num):
