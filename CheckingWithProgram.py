@@ -9,7 +9,6 @@ from Part_1 import all_prime
 from Part_2 import even_odd
 from Part_3 import prime_composite
 from Part_4 import vowel_consonant
-from Part_5 import check_in_group, check_random
 from guess_number import guess_game
 
 while True:
@@ -51,20 +50,4 @@ while True:
     elif option == 4:
         vowel_consonant()
     elif option == 5:
-        # print('1. Given Group of Values')
-        # print('2. Random Group of Values')
-        # choice = input('Enter - ')
-        # try:
-        #     choice = int(choice)
-        # except:
-        #     print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
-        #     continue
-        # if 1 > choice > 2:
-        #     print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
-        #     continue
-        # elif choice == 1:
-        #     check_in_group()
-        # elif choice == 2:
-        #     check_random()
         guess_game()
-        
