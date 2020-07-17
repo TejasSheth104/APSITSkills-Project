@@ -4,7 +4,7 @@ import string
 
 def vowel_consonant():
     vowels = 'aeiou'
-    consonants = 'bcdfghjklmnpqrstvwxyz'
+#    consonants = 'bcdfghjklmnpqrstvwxyz'
     alphabets = string.ascii_letters
 
     while True:
@@ -25,11 +25,8 @@ def vowel_consonant():
         letter = letter.lower()
         if letter in vowels:
             print('Letter', letter.upper(), '- is a VOWEL')
-        elif letter in consonants:
-            print('Letter', letter.upper(), '- is NOT a VOWEL')
         else:
-            print('\tInValid INPUT.\n\tTRY AGAIN.\n')
-            continue
+            print('Letter', letter.upper(), '- is CONSONANT')
 
 # uncomment to run the code.
 # vowel_consonant()

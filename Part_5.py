@@ -43,7 +43,7 @@ def check_random():
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
         for _ in range(length):
-            test_case.append(random.choice(range(10)))
+            test_case.append(random.choice(range(100)))
         break
 #     print(test_case)
 

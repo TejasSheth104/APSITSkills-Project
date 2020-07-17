@@ -3,15 +3,24 @@
 # prime number = a number that is divisible by 1 and the number itself.
 
 def all_prime():
-    print()
-    for num in range(1, 1000):
-        if num > 1:
-            for i in range(2, num):
-                if num % i == 0:
-                    break
-            else:
-                print(num, end=' ')
-    print()
+    while True:
+        print('\nEnter \'-1\' to QUIT.')
+        start = input('Enter the Start Number - ')
+        end = input('Enter the End Number - ')
+        try:
+            start = int(start)
+            end = int(end)
+        except:
+            print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
+            continue
+        for num in range(start, end):
+            if num > 1:
+                for i in range(2, num):
+                    if num % i == 0:
+                        break
+                else:
+                    print(num, end=' ')
+        print()
 
 # uncomment to run the code.
 # all_prime()

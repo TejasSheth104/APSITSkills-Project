@@ -21,11 +21,11 @@ while True:
     # Main-Menu Options.
     print('\nChoose your Option - ')
     print('0. Exit')
-    print('1. Print Prime Numbers between 1 to 1000.')
+    print('1. Print Prime Numbers.')
     print('2. To Find whether Number is ODD or EVEN.')
     print('3. To Find whether Number is PRIME or COMPOSITE.')
     print('4. To Find whether Alphabet is VOWEL or NOT.')
-    print('5. To Check specified Value in Group of Values')
+    print('5. Guessing Game')
     option = input('Enter - ')
     try:
         option = int(option)
