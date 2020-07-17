@@ -10,6 +10,7 @@ def level():
         try:
             select = int(select)
         except:
+            # if user enters anything other than an integer, the below message pops up
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
         if select == -1:
@@ -34,23 +35,28 @@ def guess_game():
         if attempt == 0:
             break
         print('\nRANGE -> 1 TO 100\n')
+        # explaining the terms used in the program ahead.
         print('\tGuess is HIGH BUT CLOSE -> Guessed Number is Higher than Expected but in range of 5.')
-        print('\tGuess is HIGH -> \tGuessed Number is Higher than Expected but in range of 20.')
-        print('\tGuess is TOO HIGH -> \tGuessed Number is Higher than Expected but beyond the range of 20.')
-        print('\tGuess is LOW BUT CLOSE -> Guessed Number is Lower than Expected but in range of 5.')
-        print('\tGuess is LOW -> \tGuessed Number is Lower than Expected but in range of 20.')
-        print('\tGuess is TOO LOW -> \tGuessed Number is Lower than Expected but beyond the range of 20.')
+        print('\tGuess is HIGH \t\t-> Guessed Number is Higher than Expected but in range of 20.')
+        print('\tGuess is TOO HIGH \t-> Guessed Number is Higher than Expected but beyond the range of 20.')
+        print('\tGuess is LOW BUT CLOSE  -> Guessed Number is Lower than Expected but in range of 5.')
+        print('\tGuess is LOW \t\t-> Guessed Number is Lower than Expected but in range of 20.')
+        print('\tGuess is TOO LOW \t-> Guessed Number is Lower than Expected but beyond the range of 20.')
         while attempt > 0:
             print('\n\tYou have:', attempt, 'Attempts Left\n')
             if attempt == 1:
+                # to alert the user
                 print('\t...LAST ATTEMPT!...\n')
             guess = input('Guess the Number -  ')
             try:
                 guess = int(guess)
             except:
+                # if user enters anything other than an integer, the below message pops up
                 print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
                 continue
-
+            if guess < 1 or guess > 100:
+                print('\tOUT OF RANGE.\n\tTRY AGAIN.')
+                continue
             if guess == rand_no:
                 print('\n\tBANG ON..! YOU GUESSED IT RIGHT')
                 print('\tTotal Attempts Remaining:', attempt - 1)
@@ -71,14 +77,12 @@ def guess_game():
                     print('\tGuess is LOW')
                 else:
                     print('\tGuess is TOO LOW')
-            else:
-                print('\tOUT OF RANGE.\n\tTRY AGAIN.')
-                break
+            
             attempt = attempt - 1
             if attempt == 0:
                 print('\nOut of Attempts...OOPS!')
                 print('\tNumber was ->', rand_no)
 
 # uncomment to run the code.
-guess_game()
+# guess_game()
 
