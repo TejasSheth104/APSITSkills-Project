@@ -4,7 +4,6 @@ import string
 
 def vowel_consonant():
     vowels = 'aeiou'
-#    consonants = 'bcdfghjklmnpqrstvwxyz'
     alphabets = string.ascii_letters
 
     while True:
