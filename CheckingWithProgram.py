@@ -2,7 +2,6 @@
 
 import string
 import random
-from datetime import datetime
 
 # linking different python files into one.
 from Part_1 import all_prime
@@ -13,11 +12,6 @@ from Part_5 import guess_game
 
 while True:
 
-    # datetime
-    str = datetime.now()
-    now = str.strftime("%d/%m/%y %H:%M:%S")
-    print(now)
-
     # Main-Menu Options.
     print('\nChoose your Option - ')
     print('0. Exit')
@@ -25,7 +19,7 @@ while True:
     print('2. To Find whether Number is ODD or EVEN.')
     print('3. To Find whether Number is PRIME or COMPOSITE.')
     print('4. To Find whether Alphabet is VOWEL or NOT.')
-    print('5. Guessing Game')
+    print('5. Guessing the Number Game')
     option = input('Enter - ')
     try:
         option = int(option)
@@ -39,8 +33,22 @@ while True:
     
     if option == 0:
         # exit condtion
+        print('\n\tARE YOU SURE TO TERMINATE THE PROGRAM - ')
+        print('\t1. YES, CONFIRM.')
+        print('\t2. NO, GO BACK.')
+        terminate = input('Enter - ')
+        try:
+            terminate = int(terminate)
+        except:
+            print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
+            continue
+        if terminate > 2 or terminate < 1:
+            print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
+            continue
+        if terminate == 2:
+            continue
         print('\n\tTHANK YOU FOR JOINING US!')
-        exit(-1)
+        exit(0)
     elif option == 1:
         all_prime()
     elif option == 2:
