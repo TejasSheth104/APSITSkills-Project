@@ -7,6 +7,7 @@ def vowel_consonant():
     alphabets = string.ascii_letters
 
     while True:
+        print('\n\t4. To Find whether Alphabet is VOWEL or NOT.')
         print('\nEnter \'-1\' to GO BACK.')
         letter = input('Enter a letter - ')
     
