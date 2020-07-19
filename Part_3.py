@@ -3,6 +3,7 @@
 
 def prime_composite():
     while True:
+        print('\n\t3. To Find whether Number is PRIME or COMPOSITE.')
         print('\nEnter \'-1\' to GO BACK.')
         number = input('Enter a Number - ')
         try:
