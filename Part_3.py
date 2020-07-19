@@ -3,7 +3,7 @@
 
 def prime_composite():
     while True:
-        print('\nEnter \'-1\' to QUIT.')
+        print('\nEnter \'-1\' to GO BACK.')
         number = input('Enter a Number - ')
         try:
             number = int(number)
@@ -16,7 +16,7 @@ def prime_composite():
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
         elif number < 2:
-            # negatiive numbers are  not categorized as prime or composite, 
+            # negative numbers are not categorized as prime or composite, 
             # and even 0 and 1 are Neither Prime NOR Composite
             print('Number', number, 'is NEITHER Prime NOR Composite Number\n')
             continue
