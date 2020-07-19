@@ -18,9 +18,9 @@ def all_prime():
             # exit condition
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             break
-        if start <= end:
+        if start >= end:
             # start value should be always less than the end value 
-            print('\tSTART SHOULD BE ALWAYS LESS THAN END\n\tTRY AGAIN.\n')
+            print('\tSTART NUMBER SHOULD BE ALWAYS LESS THAN END NUMBER.\n\tTRY AGAIN.\n')
             continue
         for num in range(start, end + 1):
             if num > 1:
