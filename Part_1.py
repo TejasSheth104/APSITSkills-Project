@@ -4,6 +4,7 @@
 
 def all_prime():
     while True:
+        print('\n\t1. Print Prime Numbers.')
         print('\nEnter \'-1\' to GO BACK.')
         start = input('Enter the Start Number - ')
         end = input('Enter the End Number - ')
