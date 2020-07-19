@@ -5,7 +5,7 @@ import random
 
 def level():
     while True:
-        print('\nEnter \'-1\' to QUIT.')
+        print('\nEnter \'-1\' to GO BACK.')
         print('Press 1. for EASY')
         print('Press 2. for MEDIUM')
         print('Press 3. for EXTREME')
