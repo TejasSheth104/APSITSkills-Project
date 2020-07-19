@@ -7,9 +7,9 @@ def level():
     while True:
         print('\n\t5. Guessing the Number Game')
         print('\nEnter \'-1\' to GO BACK.')
-        print('Press 1. for EASY')
-        print('Press 2. for MEDIUM')
-        print('Press 3. for EXTREME')
+        print('1. EASY')
+        print('2. MEDIUM')
+        print('3. EXTREME')
         select = input('Choose Difficulty - ')
         try:
             select = int(select)
@@ -31,6 +31,10 @@ def level():
         elif select == 3:
             value = 3
             return value
+        else:
+            print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
+            continue
+
 
 def guess_game():
     while True:
