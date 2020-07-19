@@ -9,7 +9,7 @@ from Part_1 import all_prime
 from Part_2 import even_odd
 from Part_3 import prime_composite
 from Part_4 import vowel_consonant
-from guess_number import guess_game
+from Part_5 import guess_game
 
 while True:
 
