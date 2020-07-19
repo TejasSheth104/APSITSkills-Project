@@ -5,6 +5,7 @@
 
 def even_odd():
     while True:
+        print('\n\t2. To Find whether Number is ODD or EVEN.')
         print('\nEnter \'-1\' to GO BACK.')
         number = input('Enter a Number - ')
         try:
