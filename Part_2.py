@@ -1,11 +1,11 @@
 # Write a Python program to find whether a given number (accept from the user) 
 # is even or odd, print out an appropriate message to the user.
 
-# even numbers = all those numbers that are completely divisble by 2, including 0. 
+# even numbers = all those numbers that are completely divisble by 2, including 0.
 
 def even_odd():
     while True:
-        print('\nEnter \'-1\' to QUIT.')
+        print('\nEnter \'-1\' to GO BACK.')
         number = input('Enter a Number - ')
         try:
             number = int(number)
