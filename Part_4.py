@@ -7,7 +7,7 @@ def vowel_consonant():
     alphabets = string.ascii_letters
 
     while True:
-        print('\nEnter \'-1\' to QUIT.')
+        print('\nEnter \'-1\' to GO BACK.')
         letter = input('Enter a letter - ')
     
         if letter == '-1':
@@ -16,7 +16,7 @@ def vowel_consonant():
             break
         elif (len(letter) != 1) or (letter not in alphabets):
             # checks if Length of Input is 1.
-            # and also, if the input is present in the alphabets.
+            # and also, if the input is present in the alphabets variable.
             print('\t1 LETTER EXCEPTED\n\tTRY AGAIN.\n')
             continue
     
