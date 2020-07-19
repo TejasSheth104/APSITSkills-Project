@@ -5,6 +5,7 @@ import random
 
 def level():
     while True:
+        print('\n\t5. Guessing the Number Game')
         print('\nEnter \'-1\' to GO BACK.')
         print('Press 1. for EASY')
         print('Press 2. for MEDIUM')
