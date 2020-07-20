@@ -6,11 +6,12 @@ def all_prime():
     while True:
         print('\n\t1. Print Prime Numbers.')
         print('\nEnter \'-1\' to GO BACK.')
-        start = input('Enter the Start Number - ')
-        end = input('Enter the End Number - ')
+        
         try:
-            start = int(start)
-            end = int(end)
+            # start = int(start)
+            # end = int(end)
+            start = int(input('Enter the Start Number - '))
+            end = int(input('Enter the End Number - '))
         except:
             # if user enters anything other than an integer, the below message pops up
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
