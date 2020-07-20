@@ -2,7 +2,7 @@
 
 Checking with Program -> 
 
-A.	Write a program to print all prime nos between 1 to 1000
+A.	Write a program to print all prime nos between required range.
 
 B.  Write a Python program to find whether a given number (accept from the user) is even or odd, print out an appropriate message to the user.
 
