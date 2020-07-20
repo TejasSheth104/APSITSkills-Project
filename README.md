@@ -10,8 +10,4 @@ C.  Write a Python program to find whether a given number (accept from the user)
 
 D.  Write a Python program to test whether a passed letter is a vowel or not.
 
-E.  Write a Python program to check whether a specified value is contained in a group of values.
-      
-      Test Data:
-  	
-            3 -> [1, 5, 8, 3] : True		-1 -> [1, 5, 8, 3] : False
+E.  Write a Python Game to Guess the Correct Number in given Chances based on difficulty choosen.
