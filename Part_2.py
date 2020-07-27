@@ -7,9 +7,8 @@ def even_odd():
     while True:
         print('\n\t2. To Find whether Number is ODD or EVEN.')
         print('\nEnter \'-1\' to GO BACK.')
-        number = input('Enter a Number - ')
         try:
-            number = int(number)
+            number = int(input('Enter a Number - '))
         except:
             # if user enters anything other than an integer, the below message pops up
             print('\tINTERGER EXCEPTED\n\tTRY AGAIN.\n')

@@ -6,20 +6,20 @@ def all_prime():
     while True:
         print('\n\t1. Print Prime Numbers.')
         print('\nEnter \'-1\' to GO BACK.')
-        
         try:
-            # start = int(start)
-            # end = int(end)
             start = int(input('Enter the Start Number - '))
+            if start == -1:
+                print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
+                break
             end = int(input('Enter the End Number - '))
+            if end == -1:
+                print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
+                break    
         except:
             # if user enters anything other than an integer, the below message pops up
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
-        if start == -1 or end == -1:
-            # exit condition
-            print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
-            break
+        
         if start >= end:
             # start value should be always less than the end value 
             print('\tSTART NUMBER SHOULD BE ALWAYS LESS THAN END NUMBER.\n\tTRY AGAIN.\n')

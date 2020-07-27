@@ -10,9 +10,8 @@ def level():
         print('1. EASY')
         print('2. MEDIUM')
         print('3. EXTREME')
-        select = input('Choose Difficulty - ')
         try:
-            select = int(select)
+            select = int(input('Choose Difficulty - '))
         except:
             # if user enters anything other than an integer, the below message pops up
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')

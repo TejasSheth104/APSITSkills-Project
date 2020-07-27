@@ -5,9 +5,8 @@ def prime_composite():
     while True:
         print('\n\t3. To Find whether Number is PRIME or COMPOSITE.')
         print('\nEnter \'-1\' to GO BACK.')
-        number = input('Enter a Number - ')
         try:
-            number = int(number)
+            number = int(input('Enter a Number - '))
         except:
             # if user enters anything other than an integer, the below message pops up
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
