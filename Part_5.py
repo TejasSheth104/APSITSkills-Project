@@ -54,9 +54,8 @@ def guess_game():
             if attempt == 1:
                 # to alert the user
                 print('\t...LAST ATTEMPT!...\n')
-            guess = input('Guess the Number -  ')
             try:
-                guess = int(guess)
+                guess = int(input('Guess the Number -  '))
             except:
                 # if user enters anything other than an integer, the below message pops up
                 print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')

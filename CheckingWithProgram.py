@@ -20,9 +20,8 @@ while True:
     print('3. To Find whether Number is PRIME or COMPOSITE.')
     print('4. To Find whether Alphabet is VOWEL or NOT.')
     print('5. Guessing the Number Game')
-    option = input('Enter - ')
     try:
-        option = int(option)
+        option = int(input('Enter - '))
     except:
         print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
         continue
@@ -36,9 +35,8 @@ while True:
         print('\n\tARE YOU SURE TO TERMINATE THE PROGRAM - ')
         print('\t1. YES, CONFIRM.')
         print('\t2. NO, GO BACK.')
-        terminate = input('Enter - ')
         try:
-            terminate = int(terminate)
+            terminate = int(input('Enter - '))
         except:
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
