@@ -9,8 +9,12 @@ def vowel_consonant():
     while True:
         print('\n\t4. To Find whether Alphabet is VOWEL or NOT.')
         print('\nEnter \'-1\' to GO BACK.')
-        letter = input('Enter a letter - ')
-    
+        try:
+            letter = input('Enter a letter - ')
+        except:
+            # if user enters anything other than an integer, the below message pops up
+            print('\tINTERGER EXCEPTED\n\tTRY AGAIN.\n')
+            continue
         if letter == '-1':
             # exit condition
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
