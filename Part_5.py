@@ -20,19 +20,20 @@ def level():
             # exit condition
             print('\tTHANK YOU.\n\tRETURNING TO MAIN MENU.\n')
             value = 0
-            return value
-        if select == 1:
+            # return value
+        elif select == 1:
             value = 7    
-            return value
+            # return value
         elif select == 2:
             value = 5
-            return value
+            # return value
         elif select == 3:
             value = 3
-            return value
+            # return value
         else:
             print('\tINVALID CHOICE.\n\tTRY AGAIN.\n')
             continue
+        return value
 
 
 def guess_game():
